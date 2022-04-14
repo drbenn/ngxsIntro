@@ -1,27 +1,13 @@
-# NgxsIntro
+from NGXS - introduction & getting started PART 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+https://www.youtube.com/watch?v=y1gfyEaKPpk
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Import NgxsModule
+2. Create 3 state TS files
+3. Create state actions
+4. Add actions & selector to state TS file
+5. In change value component TS add @Select decorator, add observable, subscription and dispatches
+6. In change value component HTML replace (click) or whatever interaction with a method call and incorporate (ngModelChange) to the input
+7. In diplay value TS component add @Select decorator w Observable
+8. In display value HTML component update input value and add async pipe
+9. Install Chrome ReduxWebTools Extension...and npm i @ngxs/devtools-plugin
