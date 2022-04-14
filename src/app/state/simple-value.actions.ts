@@ -12,5 +12,7 @@ export class ResetValue {
 
 export class SetValue {
   static readonly type = '[Simple Value] Set value defined by user';
+  // user can input custom defined value, so constructor is needed to hold public variable
+  // payload is default name of public variable/parameter
   constructor(public payload: number) {}
 }

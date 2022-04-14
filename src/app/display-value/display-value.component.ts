@@ -9,6 +9,6 @@ import { SimpleValueState } from '../state/simple-value.state';
   styleUrls: ['./display-value.component.scss'],
 })
 export class DisplayValueComponent {
-  // Create Select decorator
+  // Create Select decorator w Observable
   @Select(SimpleValueState.value) value$!: Observable<number>;
 }

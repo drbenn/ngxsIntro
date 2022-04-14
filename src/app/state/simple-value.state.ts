@@ -36,7 +36,6 @@ export class SimpleValueState {
 
   @Action(ResetValue) resetValue(ctx: StateContext<SimpleValueModel>) {
     const state = ctx.getState();
-    let stateValue = state.value;
     ctx.setState({ ...state, value: 0 });
   }
 
@@ -45,7 +44,6 @@ export class SimpleValueState {
     action: SetValue
   ) {
     const state = ctx.getState();
-    let stateValue = state.value;
     ctx.setState({ ...state, value: action.payload });
   }
   // Selectors are simple static methods that we use

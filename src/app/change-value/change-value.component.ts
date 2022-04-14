@@ -14,12 +14,13 @@ import { SimpleValueState } from '../state/simple-value.state';
   templateUrl: './change-value.component.html',
   styleUrls: ['./change-value.component.scss'],
 })
+// Subscribing to observable, and assign the result of the observable to a local variable
 export class ChangeValueComponent implements OnDestroy {
   @Select(SimpleValueState.value) value$!: Observable<number>;
   value!: number;
 
   private valueSubscription: Subscription;
-
+  // Calling actions from the state
   constructor(private store: Store) {
     this.valueSubscription = this.value$.subscribe((value: number) => {
       this.value = value;
